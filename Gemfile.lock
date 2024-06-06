@@ -271,6 +271,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    select2-rails (4.0.13)
     selenium-webdriver (4.8.1)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -361,6 +362,7 @@ DEPENDENCIES
   redis (~> 4.5)
   responders
   sassc-rails
+  select2-rails
   selenium-webdriver
   sidekiq (~> 6.5)
   sidekiq-scheduler (~> 5.0)

@@ -113,3 +113,5 @@ gem 'sidekiq-scheduler', '~> 5.0'
 
 # to handle nested forms
 gem "cocoon"
+
+gem "select2-rails"

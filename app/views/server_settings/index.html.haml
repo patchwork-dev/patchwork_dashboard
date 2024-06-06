@@ -16,6 +16,10 @@
               %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
             .col-md-7
               - setting[:settings].each_with_index do |option, option_index|
+                %div
+                  %select.select2.form-control{ name: 'keyword_filter_group[name]', id: 'keyword_filter_group_name' }
+                    - @existing_data.each do |data|
+                      %option{ value: data }= data
                 %div.d-flex.justify-content-between
                   %div
                     %label.form-check-label.switch{ for: option[:id] }

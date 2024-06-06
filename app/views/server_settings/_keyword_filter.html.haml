@@ -11,10 +11,7 @@
             = f.hidden_field :server_setting_id, id: 'serverSettingId'
           .mb-3
             = f.label :name, class: 'form-label'
-            %input.form-control{ list: 'data-options', name: 'keyword_filter_group[name]' }
-              %datalist#data-options
-                - @existing_data.each do |data|
-                  %option{ value: data }
+            = f.select :name, options_for_select(@existing_data), { include_blank: 'Please select...' }, { class: 'form-control', id: 'keyword-filter-group-name' }
           .mb-3.keyword_filters
             %div.d-flex
               %div.col-8.mt-3

@@ -25,9 +25,7 @@ Rails.start()
 
 localStorage.setItem('selected', null);
 localStorage.setItem('unselected', null);
-
 $(document).ready(function() {
-
   $('[data-toggle="tooltip"]').tooltip();
 
   $('#keyFilterModal').on('hidden.bs.modal', function () {
@@ -200,5 +198,12 @@ const togglePassword = (e) => {
 	}
 
 }
+
+jQuery(function () {
+  $('.select2').select2({
+    placeholder: 'Select an option',
+    allowClear: true
+  });
+})
 
 window.togglePassword = togglePassword;
